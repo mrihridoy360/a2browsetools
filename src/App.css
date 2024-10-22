@@ -1,5 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+body, button, input, textarea {
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  color: #333;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
 }
 
 .App-logo {
@@ -34,5 +51,98 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.navbar {
+  background-color: #282c34;
+  padding: 1rem;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  margin-left: 1rem;
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+}
+
+.home, .dashboard {
+  padding: 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: #1877f2;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #166fe5;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #1877f2;
+}
+
+@media (max-width: 768px) {
+  .App {
+    flex-direction: column;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
   }
 }

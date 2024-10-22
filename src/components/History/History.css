@@ -1,0 +1,35 @@
+.history {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.history h2 {
+  margin-bottom: 20px;
+}
+
+.history-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.history-item {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.tool-name {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.timestamp {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.details {
+  margin-top: 5px;
+  color: #333;
+}
